@@ -29,6 +29,10 @@ async function getGoal() {
     .select()
     .eq("user_id", userID)
     .eq("goal_type_id", getGoalType());
+  /*
+    SELECT * FROM goals
+    WHERE user_id = userID AND goal_type_id = getGoalType()
+    */
 
   console.log(data);
   console.log(error);
